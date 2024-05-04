@@ -35,7 +35,9 @@ app.use('/api/user', usersRoute);//signUp, Signin
 app.use('/api/adminBoard',adminBoard);//Admin panel main branche
 app.use('/api/mainHome', mainHome); //Main home page branche
 
-
+app.get('/', (req, res) =>{
+    res.send("hello express js");
+});
 
 
 app.listen(process.env.PORT, () =>{

@@ -11,7 +11,7 @@ app.use((req, res, next) =>{
 })
 app.use(express.json());
 app.use(cors({
-    origin: "http://localhost:5173",
+    origin: "https://react-kappa-sooty.vercel.app/",
 }));
 app.use(cookieParser());
 app.use(express.static('public'));//this is for give the access to public folder to front end

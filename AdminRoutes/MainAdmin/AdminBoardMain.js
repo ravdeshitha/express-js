@@ -9,6 +9,7 @@ const Owners = require('./OwnerDetails');
 const Events = require('./EventDetails');
 const Contact = require('./UserContacts');
 const Gallery = require('./GalleryImages');
+const Contents = require('./PageContent');
 
 //asign routers
 router.use(UserList);
@@ -17,6 +18,7 @@ router.use(Owners);
 router.use(Events);
 router.use(Contact);
 router.use(Gallery);
+router.use(Contents);
 
 
 module.exports = router;
